@@ -11,7 +11,7 @@ return (
 <>
     <div className="navbar">
     <div className="logo-nav">
-        <img src="/image/logo.jpg" alt="logo" />
+        <img src="/public/image/logo.jpg" alt="logo" />
         <h2>Portfolio Web</h2>
     </div>
 
