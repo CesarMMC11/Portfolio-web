@@ -1,0 +1,152 @@
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.services-title {
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+.card {
+  width: 32rem;
+  height: 15rem;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 100px;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid white;
+  border-radius: 100px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+  background-color: #0c7075;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+}
+
+.card-front {
+  z-index: 2;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #072e33;
+}
+
+.card-back p {
+    font-size: 26px;
+    padding: 2rem;
+}
+
+.card-front h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+  }
+
+  .card {
+    width: 90%;
+    perspective: 1000px;
+  }
+
+  .card-inner {
+    border-radius: 2rem;
+  }
+
+  .card-front,
+  .card-back {
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+
+  .card-back p {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+
+  .card-front h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-icon {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+    padding: 2rem;
+    justify-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: 16rem;
+  }
+
+  .card-inner {
+    border-radius: 2.5rem;
+  }
+
+  .card-front,
+  .card-back {
+    border-radius: 2.5rem;
+    padding: 2rem;
+  }
+
+  .card-front h2 {
+    font-size: 1.8rem;
+  }
+
+  .card-back p {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .card-icon {
+    font-size: 3.2rem;
+  }
+}
+
+

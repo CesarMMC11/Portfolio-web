@@ -1,0 +1,139 @@
+.habilidades {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #05161a;
+    color: #fff;
+}
+
+.habilidades-title {
+    font-size: 3.5rem;
+    color: white;
+    text-decoration: underline;
+}
+
+.habilidades-grupo {
+    margin: 4.5rem;
+    border: 1px solid white;
+    border-radius: 24px;
+    padding: 2rem;
+    background-color: #09313a88;
+
+}
+
+.habilidades-grupo h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: white;
+}
+
+.iconos-grupo {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.icono-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.etiqueta {
+  margin-top: 1rem;
+  font-size: 25px;
+}
+
+.icono {
+    font-size: 5rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background-color: #05161a;
+    transition: all 0.3s ease;
+}
+
+.icono:hover {
+    transform: scale(1.2);
+    border-color: #00f2ff;
+    color: #00f2ff;
+}
+
+.icono-con-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    color: white;
+    gap: 0.5rem;
+}
+
+.icono-con-texto span {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .habilidades-title {
+    font-size: 2.2rem;
+  }
+
+  .habilidades-grupo {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .habilidades-grupo h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .iconos-grupo {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+  }
+
+  .icono {
+    font-size: 3rem;
+    padding: 1rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .habilidades-title {
+    font-size: 2.8rem;
+  }
+
+  .habilidades-grupo {
+    margin: 3rem 2rem;
+    padding: 1.5rem;
+  }
+
+  .habilidades-grupo h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .iconos-grupo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .icono {
+    font-size: 4rem;
+    padding: 1.2rem;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+

@@ -1,0 +1,181 @@
+.form-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 35rem;
+    border: 1px solid white;
+    border-radius: 34px;
+    padding: 5rem 0;
+    background-color: #0c7075;
+}
+
+.titulo-contacto {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: 5rem;
+    text-decoration: underline;
+
+}
+
+.location-form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    gap: 8rem;
+    font-size: 25px;
+    color: white;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    transition: all .3s ease-in-out;
+}
+
+.icon-form {
+    font-size: 2rem;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 2rem;
+}
+
+.form-container label {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.form-container input {
+    margin-bottom: 2rem;
+    height: 60px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 25px;
+}
+
+.form-container textarea {
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 1rem;
+    resize: vertical;
+    height: auto;
+    font-size: 25px;
+}
+
+.form-container button {
+    background-color: #052f31;
+    border: 1px solid white;
+    color: white;
+    font-size: 25px;
+    padding: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container button:hover {
+    background-color: #095558;
+}
+
+
+@media (max-width: 1024px) {
+  .form-container {
+    margin: 4rem 2rem;
+    padding: 3rem 1.5rem;
+  }
+
+  .titulo-contacto {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .form-container form {
+    width: 100%;
+  }
+
+  .form-container label {
+    font-size: 1.5rem;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    font-size: 1.1rem;
+    height: auto;
+    padding: 0.8rem;
+  }
+
+  .form-container button {
+    width: 50%;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  .location-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
+
+  .icon-form {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-contacto {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+  }
+
+  .form-container {
+    margin: 3rem 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .form-container label {
+    font-size: 1.2rem;
+    margin: 1rem 1rem;
+    
+  }
+
+  .form-container input,
+  .form-container textarea {
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin: 0 1rem;
+  }
+
+  .form-container button {
+    font-size: 1rem;
+    padding: 0.7rem;
+    width: 50%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .location-form {
+    font-size: 1.2rem;
+    gap: 1.5rem;
+  }
+
+  .icon-form {
+    font-size: 1.5rem;
+  }
+}
+
+    
