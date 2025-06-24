@@ -185,12 +185,12 @@
     }
     
     .Text-header-2 {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        gap: .5rem;
     }
     
     .btn-descargar-1 {
-        width: 100%;
+        width: 70%;
         text-align: center;
     }
 }
