@@ -39,7 +39,7 @@ return (
     </div>
 
     <div className='imagen-header' ref={imgRef}>
-        <img src="/public/image/logome.png" alt="imagen" />
+        <img src="/image/logome.png" alt="imagen" />
     </div>
     </div>
 

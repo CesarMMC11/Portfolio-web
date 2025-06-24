@@ -11,7 +11,7 @@ return (
 
     <div className="about-me-content">
     <div className="about-me-content-img">
-        <img src="/public/image/about.png" alt="about" />
+        <img src="/image/about.png" alt="about" />
     </div>
 
     <div className="about-me-content-text">
