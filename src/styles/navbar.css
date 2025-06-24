@@ -1,40 +1,51 @@
+/* Reset básico */
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: white;
 }
 
+/* Navbar principal */
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.5);
-    padding-top: 1rem;
-    padding-bottom: 5px;
+    padding: 1rem 5%;
     background-color: #05161a;
+    position: relative; /* Necesario para el menú desplegable */
 }
 
+/* Logo y nombre */
 .logo-nav {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-left: 25rem;
+    margin-left: 0;
+    z-index: 20; /* Para que esté por encima del menú desplegable */
 }
 
 .logo-nav h2 {
     color: white;
+    margin: 0;
 }
 
 .logo-nav img {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
-    border: 01px solid rgb(94, 93, 93);
+    border: 1px solid rgb(94, 93, 93);
+    object-fit: cover;
 }
 
+/* Botones de navegación (versión desktop) */
 .buttons-nav {
     display: flex;
     align-items: center;
-    gap: 3rem;
-    margin-right: 25rem;
+    gap: 2rem;
+    margin-right: 0;
 }
 
 .button-nav {
@@ -45,81 +56,110 @@ body {
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s;
-    background-color: #05161a;
+    background-color: transparent;
+    color: white;
 }
 
 .button-nav:hover {
     background-color: #072e33;
-    height: 3rem;
 }
 
 .button-nav a {
-    color:white;
+    color: white;
     text-decoration: none;
-
+    display: block;
 }
 
-    .hamburger {
+/* Menú hamburguesa (oculto en desktop) */
+.hamburger {
     display: none;
     font-size: 2rem;
     color: white;
     cursor: pointer;
-    margin-right: 2rem;
-    }
+    background: none;
+    border: none;
+    padding: 0;
+    z-index: 20;
+}
 
-    @media (max-width: 1024px) {
+/* Media Queries para responsive */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+    
     .buttons-nav {
-        position: absolute;
-        top: 5rem;
-        right: 0;
+        gap: 1.5rem;
+    }
+}
+
+/* Móvil (menos de 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    /* Ocultamos los botones normales y mostramos el hamburguesa */
+    .buttons-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
         background-color: #05161a;
         flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        padding: 1rem 2rem;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
         display: none;
         z-index: 10;
+        margin-top: 0;
+        padding: 2rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
     }
-
+    
     .buttons-nav.open {
         display: flex;
+        transform: translateX(0);
     }
-
+    
     .hamburger {
         display: block;
+        margin-right: 0;
     }
-
+    
     .logo-nav {
-        margin-left: 1rem;
+        margin-left: 0;
     }
-
-    .buttons-nav div {
-        width: 100%;
-        margin-bottom: 1rem;
-
-    }
-
+    
     .button-nav {
         width: 100%;
         text-align: center;
-    }
-
-    .navbar {
-        flex-wrap: wrap;
-        align-items: center;
         padding: 1rem;
+        font-size: 1.2rem;
     }
-
-    .buttons-nav a {
-        width: 100%;
-        display: block;
+    
+    .button-nav:hover {
+        height: auto;
     }
+}
 
-    .buttons-nav {
-        margin-right: 0;
+/* Pequeños ajustes para móviles muy pequeños */
+@media (max-width: 480px) {
+    .logo-nav h2 {
+        font-size: 1.2rem;
     }
+    
+    .logo-nav img {
+        width: 3rem;
+        height: 3rem;
     }
-
-
-
-
+    
+    .button-nav {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+}
