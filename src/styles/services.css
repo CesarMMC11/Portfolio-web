@@ -83,7 +83,7 @@ body{
 /* Tablets horizontales y escritorio pequeño */
 @media (max-width: 1199px) and (min-width: 900px) {
     .services-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         padding: 2rem 1rem;
     }
