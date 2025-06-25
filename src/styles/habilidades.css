@@ -71,57 +71,43 @@
     margin-top: 0.5rem;
 }
 
-/* Pantallas muy grandes (1400px+) */
-@media (min-width: 1400px) {
-    .habilidades-grupo {
-        margin: 5rem auto;
-        max-width: 1200px;
-        padding: 3rem;
+/* Tablets grandes (1024px - 1200px) */
+@media (max-width: 1200px) and (min-width: 1025px) {
+    .habilidades-title {
+        font-size: 3.2rem;
     }
     
-    .iconos-grupo {
-        gap: 2rem;
-    }
-    
-    .icono {
-        font-size: 5.5rem;
-        padding: 2rem;
-    }
-    
-    .etiqueta {
-        font-size: 1.8rem;
-    }
-}
-
-/* Escritorio grande (1200px - 1399px) */
-@media (max-width: 1399px) and (min-width: 1200px) {
     .habilidades-grupo {
         margin: 4rem 3rem;
-        padding: 2.5rem;
-    }
-    
-    .iconos-grupo {
-        gap: 1.5rem;
-    }
-    
-    .etiqueta {
-        font-size: 1.6rem;
-    }
-}
-
-/* Escritorio mediano (1024px - 1199px) */
-@media (max-width: 1199px) and (min-width: 1024px) {
-    .habilidades-title {
-        font-size: 3rem;
-    }
-    
-    .habilidades-grupo {
-        margin: 3.5rem 2rem;
-        padding: 2rem;
     }
     
     .habilidades-grupo h3 {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
+    }
+    
+    .icono {
+        font-size: 4.5rem;
+        padding: 1.3rem;
+    }
+    
+    .etiqueta {
+        font-size: 22px;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .habilidades-title {
+        font-size: 2.8rem;
+    }
+    
+    .habilidades-grupo {
+        margin: 3rem 2rem;
+        padding: 1.5rem;
+    }
+    
+    .habilidades-grupo h3 {
+        font-size: 2rem;
         margin-bottom: 2rem;
     }
     
@@ -129,44 +115,6 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 2rem;
-    }
-    
-    .icono {
-        font-size: 4.5rem;
-        padding: 1.3rem;
-        min-width: 110px;
-        min-height: 110px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .etiqueta {
-        font-size: 1.4rem;
-    }
-}
-
-/* Tablet horizontal (900px - 1023px) */
-@media (max-width: 1023px) and (min-width: 900px) {
-    .habilidades-title {
-        font-size: 2.8rem;
-    }
-    
-    .habilidades-grupo {
-        margin: 3rem 1.5rem;
-        padding: 1.8rem;
-    }
-    
-    .habilidades-grupo h3 {
-        font-size: 2rem;
-        margin-bottom: 1.8rem;
-    }
-    
-    .iconos-grupo {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 1.5rem;
-        justify-items: center;
     }
     
     .icono {
@@ -180,184 +128,82 @@
     }
     
     .etiqueta {
-        font-size: 1.2rem;
+        font-size: 18px;
     }
 }
 
-/* Tablet vertical (700px - 899px) */
-@media (max-width: 899px) and (min-width: 700px) {
+/* Móviles (480px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
     .habilidades-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     
     .habilidades-grupo {
-        margin: 2.5rem 1rem;
+        margin: 2rem 1rem;
         padding: 1.5rem;
-        border-radius: 20px;
     }
     
     .habilidades-grupo h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-bottom: 1.5rem;
     }
     
     .iconos-grupo {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.2rem;
-        justify-items: center;
-    }
-    
-    .icono {
-        font-size: 3.5rem;
-        padding: 1rem;
-        width: 90px;
-        height: 90px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .etiqueta {
-        font-size: 1rem;
-        margin-top: 0.8rem;
-    }
-}
-
-/* Móvil grande (500px - 699px) */
-@media (max-width: 699px) and (min-width: 500px) {
-    .habilidades {
-        padding: 2rem 0.8rem;
-    }
-    
-    .habilidades-title {
-        font-size: 2.2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .habilidades-grupo {
-        margin: 2rem 0.5rem;
-        padding: 1.2rem;
-        border-radius: 16px;
-    }
-    
-    .habilidades-grupo h3 {
-        font-size: 1.6rem;
-        margin-bottom: 1.2rem;
-    }
-    
-    .iconos-grupo {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
         justify-items: center;
+        gap: 1.5rem;
     }
     
     .icono {
         font-size: 3rem;
-        padding: 0.8rem;
+        padding: 1rem;
         width: 80px;
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 10px;
     }
     
     .etiqueta {
-        font-size: 0.9rem;
-        margin-top: 0.6rem;
+        font-size: 16px;
     }
 }
 
-/* Móvil mediano (400px - 499px) */
-@media (max-width: 499px) and (min-width: 400px) {
-    .habilidades {
-        padding: 1.5rem 0.5rem;
-    }
-    
-    .habilidades-title {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .habilidades-grupo {
-        margin: 1.5rem 0.3rem;
-        padding: 1rem;
-        border-radius: 12px;
-    }
-    
-    .habilidades-grupo h3 {
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
-    }
-    
-    .iconos-grupo {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.8rem;
-        justify-items: center;
-    }
-    
-    .icono {
-        font-size: 2.5rem;
-        padding: 0.6rem;
-        width: 70px;
-        height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 8px;
-    }
-    
-    .etiqueta {
-        font-size: 0.8rem;
-        margin-top: 0.5rem;
-    }
-}
-
-/* Móvil pequeño (320px - 399px) */
-@media (max-width: 399px) {
-    .habilidades {
-        padding: 1rem 0.3rem;
-    }
-    
+/* Móviles pequeños (320px - 480px) */
+@media (max-width: 480px) {
     .habilidades-title {
         font-size: 1.8rem;
-        margin-bottom: 1rem;
     }
     
     .habilidades-grupo {
-        margin: 1rem 0.2rem;
-        padding: 0.8rem;
-        border-radius: 10px;
+        margin: 1.5rem 0.5rem;
+        padding: 1rem;
     }
     
     .habilidades-grupo h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.8rem;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
     }
     
     .iconos-grupo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.6rem;
         justify-items: center;
+        gap: 1rem;
     }
     
     .icono {
-        font-size: 2rem;
-        padding: 0.5rem;
-        width: 60px;
-        height: 60px;
+        font-size: 2.5rem;
+        padding: 0.8rem;
+        width: 70px;
+        height: 70px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 6px;
     }
     
     .etiqueta {
-        font-size: 0.7rem;
-        margin-top: 0.4rem;
+        font-size: 14px;
     }
 }
