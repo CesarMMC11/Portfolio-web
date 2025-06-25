@@ -23,7 +23,7 @@ return (
         <input
         type="text"
         name="name"
-        placeholder="¡Deja tu nombre y apellido por acá!"
+        placeholder="¡Deja tu nombre y apellido aqui"
         required
         />
 
@@ -31,7 +31,7 @@ return (
         <input
         type="email"
         name="email"
-        placeholder="¡Deja tu email por aquí!"
+        placeholder="¡Deja tu email!"
         required
         />
 
@@ -39,7 +39,7 @@ return (
         <input
         type="text"
         name="asunto"
-        placeholder="¿Tienes algo pensado? ¡Hagámoslo!"
+        placeholder="¿Alguna Idea? ¡Hagámoslo!"
         required
         />
 
