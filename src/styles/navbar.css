@@ -81,6 +81,7 @@ body {
     border: none;
     padding: 0;
     z-index: 20;
+    margin-right: 1rem;
 }
 
 /* Escritorio grande (1200px+) */
@@ -134,6 +135,8 @@ body {
     
     .hamburger {
         display: block;
+        margin-right: 1rem;
+
     }
     
     .button-nav {
@@ -181,6 +184,8 @@ body {
     
     .hamburger {
         display: block;
+        margin-right: 1rem;
+
     }
     
     .button-nav {
@@ -224,6 +229,8 @@ body {
     .hamburger {
         display: block;
         font-size: 1.8rem;
+        margin-right: 1rem;
+    
     }
     
     .button-nav {
@@ -276,6 +283,8 @@ body {
     .hamburger {
         display: block;
         font-size: 1.6rem;
+        margin-right: 1rem;
+    
     }
     
     .button-nav {
