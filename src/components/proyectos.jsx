@@ -34,6 +34,15 @@ return (
         que se encuentra en crecimiento.</p>
     </div>
 
+    <div className='project-card'>
+        <img src="/image/landing.png" alt="imagen" />
+        <h3>EL Rincón del Barista</h3>
+        <p>Desarrollada con React.js + Vite, es una landing page
+            sencilla, cuenta con Menú, galeria de imagenes y otras
+            secciones adaptadas a la idea principal</p>
+    </div>
+
+
     </div>
 </div>
 );
