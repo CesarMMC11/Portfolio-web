@@ -202,8 +202,8 @@
     .contenedor {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
-        padding-top: 2rem;
+        gap: 1rem;
+        padding-top: 1rem;
         height: auto;
     }
 
@@ -239,7 +239,7 @@
 
     .Text-header-2 {
         margin-left: 0;
-        padding-top: 2rem;
+        padding-top: 1rem;
         justify-content: center;
         flex-wrap: wrap;
         gap: 1.5rem;
