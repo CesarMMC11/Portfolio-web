@@ -56,14 +56,18 @@
 .btn-proyect {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    margin-left: 3rem;
+    margin-left: auto;   /* centrado desde el inicio */
+    margin-right: auto;
     padding: 1rem;
-    width: 30rem;
+    max-width: 30rem;    /* límite superior */
+    width: 100%;         /* ocupa todo el ancho disponible */
     border-radius: 10px;
     background-color: #0c7075;
-    border: 1px solid  white;
+    border: 1px solid white;
     transition: all 0.7s;
+    display: block;      /* necesario para margin auto */
 }
+
 
 .btn-proyect:hover {
     background-color: #04292e;
@@ -100,11 +104,14 @@
   }
 
   .btn-proyect {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    font-size: 1rem;
-    padding: 0.8rem 1.2rem;
+        /* Se adapta el ancho para no ser tan grande y se centra */
+        width: 80%; /* Ocupa el 80% del contenedor padre */
+        max-width: 300px; /* Evita que crezca demasiado en tabletas */
+        margin-left: auto;
+        margin-right: auto;
+        display: block; /* Necesario para que margin: auto funcione */
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
   }
 }
 
@@ -129,7 +136,10 @@
   }
 
   .btn-proyect {
-    font-size: 0.95rem;
-    padding: 0.7rem 1rem;
+        /* Hereda width: 80% y margin: auto de 1024px, solo ajustamos tamaño de fuente/padding */
+        font-size: 0.95rem;
+        padding: 0.7rem 1rem;
+        /* Puedes reducir aún más el ancho si lo necesitas, por ejemplo: width: 90%; */
+        width: 85%; 
   }
 }
