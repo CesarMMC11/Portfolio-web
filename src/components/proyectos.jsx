@@ -4,7 +4,7 @@ import '../styles/proyects.css';
 const ProyectsComponents = () => {
 return (
 <div className='proyectos'>
-    <h2>Proyectos</h2>
+    <h2>Proyectos Destacados</h2>
 
     <div className='project-container'>
 
@@ -12,10 +12,14 @@ return (
         <img src="/image/proyecto1.png" alt="imagen" />
         <h3>Club de Pádel CP3</h3>
         <p>Página web desarrollada con React.js y 
-        Node.js para un club de pádel, en el cual se maneja la gestión de reservas e inscripciones.</p>
+        Node.js para un club de pádel, en el cual se maneja 
+        la gestión de reservas e inscripciones.</p>
 
         <button className='btn-proyect'>
         <a href="https://clubdepadelcp.netlify.app/home">Ver demo</a>
+        </button>
+        <button className='btn-proyect'>
+        <a href="https://clubdepadelcp.netlify.app/home">Codigo</a>
         </button>
     </div>
 

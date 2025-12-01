@@ -9,49 +9,56 @@
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     margin: 8rem;
 
 }
 .project-card {
-    width: 500px;
+    width: 90%;
     height: auto;
     margin: 20px;
     border-radius: 12px;
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
     border: 1px solid white;
     background-color: #0c7075;
+    overflow: hidden;      /* evita que la imagen sobresalga */
 }
 
 .project-card img {
-    width: 500px;
+    width: 100%;
     border-radius: 13px;
     padding: 1px;
+    object-fit: cover;
     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    transition: transform 0.4s ease; /* animación suave */
+}
+
+.project-card img:hover {
+    transform: scale(1.1); /* zoom ligero */
 }
 
 .project-card h3 {
-    margin-top: 10px;
-    font-size: 35px;
-    margin-top: 2rem;
+    font-size: 40px;
     color: white;
-    text-align: center;
+    text-align: start;
+    padding-left: 2rem;
 }
 
 .project-card p {
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .btn-proyect {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    margin-left: 12rem;
+    margin-left: 3rem;
     padding: 1rem;
+    width: 30rem;
     border-radius: 10px;
     background-color: #0c7075;
     border: 1px solid  white;
@@ -65,7 +72,7 @@
 .btn-proyect a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 @media (max-width: 1024px) {
