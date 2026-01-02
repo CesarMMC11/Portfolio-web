@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import '../styles/habilidades.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaDatabase, FaGithub, FaTerminal } from "react-icons/fa";
 import { DiPhp } from "react-icons/di";
-import { SiVite, SiGreensock, SiNodedotjs, SiLaravel, SiFigma, SiAngular, SiPostman, SiNotion } from "react-icons/si";
+import { SiPython, SiNestjs, SiExpress, SiVite, SiGreensock, SiNodedotjs, SiLaravel, SiFigma, SiAngular, SiPostman, SiNotion } from "react-icons/si";
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -46,8 +46,9 @@ return (
     <div className="iconos-grupo">
         {[
         { Icon: FaHtml5, nombre: 'HTML5' },
-        { Icon: FaCss3Alt, nombre: 'CSS3' },
+        {Icon: SiPython, nombre: 'Python'},
         { Icon: FaJs, nombre: 'JavaScript' },
+        { Icon: SiNodedotjs, nombre: 'Node.Js' },
         { Icon: DiPhp, nombre: 'PHP' },
         { Icon: FaDatabase, nombre: 'SQL' },
         ].map(({ Icon, nombre }, i) => (
@@ -66,9 +67,10 @@ return (
         { Icon: FaReact, nombre: 'React.Js' },
         { Icon: SiVite, nombre: 'Vite' },
         { Icon: SiGreensock, nombre: 'GSAP' },
-        { Icon: SiNodedotjs, nombre: 'Node.Js' },
         { Icon: SiLaravel, nombre: 'Laravel' },
         { Icon: SiAngular, nombre: 'Angular' },
+        { Icon: SiNestjs, nombre: "Nest"},
+        { Icon: SiExpress, nombre: "Express"}
         ].map(({ Icon, nombre }, i) => (
         <div className='icono-container' key={i} ref={agregarRef}>
             <Icon className="icono" title={nombre} />
