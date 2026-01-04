@@ -52,9 +52,6 @@ return (
         <FaGithub className='icon-header' />
     </a>
 
-    <a href="/Curriculum Vitae.pdf" download="Curriculum Vitae.pdf" className='btn-descargar-1'>
-        Descargar CV
-    </a>
     </div>
 </div>
 );

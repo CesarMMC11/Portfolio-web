@@ -20,26 +20,14 @@ return (
     </div>
 
     <nav className={`buttons-nav ${menuOpen ? "open" : ""}`}>
-        <div>
-        <button className="button-nav">
-            <a href="/home">Home</a>
-        </button>
-        </div>
-        <div>
-        <button className="button-nav">
-            <a href="/proyectos">Proyectos</a>
-        </button>
-        </div>
-        <div>
-        <button className="button-nav">
-            <a href="/contacto">Contacto</a>
-        </button>
-        </div>
-        <div>
-        <button className="button-nav">
-            <a href="/about">Sobre Mí</a>
-        </button>
-        </div>
+        <nav className={`buttons-nav ${menuOpen ? "open" : ""}`}>
+        <a href="#habilidades" className="button-nav">Habilidades</a>
+        <a href="#servicios" className="button-nav">Servicios</a>
+        <a href="#proyectos" className="button-nav">Proyectos</a>
+        <a href="#about" className="button-nav">Sobre Mi</a>
+        <a href="#contacto" className="button-nav">Contacto</a>
+</nav>
+
     </nav>
     </div>
 </>

@@ -1,0 +1,35 @@
+.skill-container {
+  margin: 1rem 0;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  background: #eee;
+  border-radius: 8px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-progress {
+  background: linear-gradient(90deg, #17c41d, #0a380c);
+  height: 100%;
+  width: 0%; /* animado con GSAP */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* coloca el porcentaje al final de la barra */
+  padding-right: 8px;
+}
+
+.porcentaje {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+}

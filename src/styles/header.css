@@ -76,15 +76,6 @@ body {
     color: #0e8f94;
 }
 
-.btn-descargar-1 {
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 12px;
-    padding: .8rem 1rem;
-    transition: all .3s ease-in-out;
-    background-color: #08505300;
-}
-
 .Text-header p{
     color: white;
     font-size: 40px;

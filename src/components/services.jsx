@@ -30,9 +30,9 @@ cardsRef.current.forEach((card) => {
 }, []);
 
 return (
-<div className='services'>
+<section id='servicios' className='services'>
     <div className='services-title'>
-    <h2>Mis Servicios</h2>
+    <h2>02. Mis Servicios</h2>
     </div>
 
     <div className='services-container'>
@@ -92,7 +92,7 @@ return (
         </div>
     </div>
     </div>
-</div>
+</section>
 );
 };
 

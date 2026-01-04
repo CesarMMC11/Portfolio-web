@@ -12,7 +12,7 @@ const ContactForm = () => {
 const [submitted, setSubmitted] = useState(false);
 
 return (
-<div className="form">
+<section id='contacto' className="form">
     <div className="titulo-contacto">
     <h2>¡Genial! <br />¿Qué tienes en mente?</h2>
     </div>
@@ -70,7 +70,7 @@ return (
         </div>
     </div>
     </div>
-</div>
+</section>
 );
 };
 

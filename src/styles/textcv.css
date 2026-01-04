@@ -1,0 +1,81 @@
+.textcv {
+    max-width: 75%;
+    margin: 4rem auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    background: linear-gradient(145deg, #062e30, #0a3f42);
+    border-radius: 24px;
+    padding: 4rem 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 10px 25px rgba(0, 224, 255, 0.3);
+    color: #e0f7fa;
+    position: relative;
+    overflow: hidden;
+}
+
+/* efecto glow en el borde */
+.textcv::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    padding: 2px;
+    background: linear-gradient(90deg, #00e0ff, #1c9e20, #ffdd00);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    animation: borderGlow 6s linear infinite;
+}
+
+@keyframes borderGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Botón llamativo */
+.btn-descargar-1 {
+    display: inline-block;
+    margin: 2rem auto 0;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    transition: all .4s ease-in-out;
+    background: linear-gradient(90deg, #237e8a, #004a4e);
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 224, 255, 0.4);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+/* efecto hover con brillo */
+.btn-descargar-1:hover {
+    background: linear-gradient(90deg, #1c9e20, #00e0ff);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 224, 255, 0.6);
+}
+
+/* animación de brillo que recorre el botón */
+.btn-descargar-1::after {
+    content: "";
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: rgba(255,255,255,0.2);
+    transform: skewX(-20deg);
+    transition: left 0.5s;
+}
+
+.btn-descargar-1:hover::after {
+    left: 100%;
+}
